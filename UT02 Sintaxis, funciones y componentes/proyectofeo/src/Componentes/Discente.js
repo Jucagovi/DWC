@@ -3,7 +3,7 @@ import React from "react";
 function Discente(props) {
   return (
     <React.Fragment>
-      <p>
+      <div>
         {/* <p>Apellidos, Nombre</p>
         <p>Curso matrícula</p>
         <p>Módulos matrícula</p> */}
@@ -22,7 +22,7 @@ function Discente(props) {
         </p>
         <p>{props.curso}</p>
         <p>{props.children}</p> */}
-      </p>
+      </div>
     </React.Fragment>
   );
 }
