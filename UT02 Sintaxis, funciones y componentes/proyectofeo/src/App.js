@@ -10,7 +10,7 @@ function App() {
   // 2-> Compruebo la estructura de lo que se ha importado para saber cómo tratarlo.
   console.log(feo);
   // --> resulta que es un objeto y dentro de él un JSON (el que necesito).
-  // Esto es así ya que el fichero no estaba pensado para ser importado, si no para serc opiado y pegado dentro del componente <App>.
+  // Esto es así ya que el fichero no estaba pensado para ser importado, sino para ser copiado y pegado dentro del componente <App>.
   // Aún así, está bien que queráis experimentar. Bien hecho.
   const objeto = {
     nombre: "Juan",
