@@ -12,7 +12,9 @@ function App() {
   };
   return (
     <React.Fragment>
-      <Discente datos={objeto} />
+      <Discente nombre="Feo" apellidos="De Verdad" curso="2DAW">
+        DWC, DWS, DIW, DAW
+      </Discente>
     </React.Fragment>
   );
 }
