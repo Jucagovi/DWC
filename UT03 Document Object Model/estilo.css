@@ -1,0 +1,10 @@
+.destacado {
+  color: red;
+  font-weight: bold;
+}
+
+.verde {
+  color: green;
+  font-family: fantasy;
+  border: red 2px solid;
+}
