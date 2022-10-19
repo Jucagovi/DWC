@@ -1,12 +1,10 @@
 import React from "react";
-import "./App.css";
-import Discente from "./Componentes/Discente";
-import Discentes from "./Componentes/Discentes.js";
+import Discente from "./Componentes/UT02/Discente.js";
 // 1 -> Importo el fichero desde un archivo.
-import feo from "./Ejercicio2.json";
+import feo from "./Objetos/UT02Ejercicio2.json";
 // -> Otra opción es copiar el código del objeto JSON del fichero Ejericio2.js aquí.
 
-function App() {
+function Unidad02() {
   // 2-> Compruebo la estructura de lo que se ha importado para saber cómo tratarlo.
   console.log(feo);
   // --> resulta que es un objeto y dentro de él un JSON (el que necesito).
@@ -31,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default Unidad02;

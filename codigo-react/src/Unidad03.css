@@ -1,0 +1,21 @@
+p {
+  padding: 2px;
+  color: blue;
+  background-color: cornflowerblue;
+}
+
+.rojo {
+  padding: 2px;
+  color: red;
+  background-color: lightcoral;
+}
+
+button {
+  display: block;
+}
+
+#destino {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
