@@ -1,0 +1,54 @@
+#soltables,
+#soltablesTambien,
+#arrastrables {
+  display: flex;
+}
+
+#arrastrables div {
+  margin: 10px 17px 0 10px;
+}
+
+.arrastrable {
+  flex: 0 0 100px;
+  height: 160px;
+  text-align: center;
+  font-size: 90px;
+  background: rgb(42, 85, 41);
+  border: 1px solid;
+}
+
+.soltable,
+.feo {
+  flex: 0 0 100px;
+  height: 160px;
+  background: rgb(185, 151, 216);
+  padding: 10px;
+  margin: 10px 10px 0 0;
+}
+
+#feo {
+  width: 400px;
+  height: 100px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+  font: bold;
+}
+
+/* Comentar hasta la última sesión */
+
+.contenedor {
+  width: 190px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contenedor button {
+  margin: 5px;
+}
