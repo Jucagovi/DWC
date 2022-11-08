@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.estado {
+  border: dashed white 3px;
+  padding: 25px;
+  margin-top: 15px;
+}
+
+.conEstilo {
+  padding: 5px;
+  margin-left: 10px;
+  border: 2px white solid;
+  background-color: rgb(197, 197, 197);
+  min-width: 350px;
+}
