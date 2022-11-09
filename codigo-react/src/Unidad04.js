@@ -5,6 +5,7 @@ import Verduras from "./Componentes/UT04/Verduras.js";
 import Discente from "./Componentes/UT04/Discente.js";
 import Formulario from "./Componentes/UT04/Formulario.js";
 import FormularioDiscente from "./Componentes/UT04/FormularioDiscente.js";
+import Prueba from "./Componentes/UT04/Prueba.js";
 
 function Unidad04() {
   return (
@@ -15,6 +16,7 @@ function Unidad04() {
       {/* <Discente /> */}
       <Formulario />
       {/* <FormularioDiscente /> */}
+      {/* <Prueba/> */}
     </React.Fragment>
   );
 }
