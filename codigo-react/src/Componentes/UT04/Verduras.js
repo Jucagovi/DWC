@@ -18,11 +18,6 @@ function Verduras() {
   const updateVerdura = (nuevoNombre) => {
     const nuevasVerduras = verduras.map((verdura) => {
       return verdura === nuevoNombre ? `${verdura} <-- ¡Cambiado!` : verdura;
-      /*   if (verdura === nuevoNombre) {
-        return "Cambiado";
-      } else {
-        return verdura;
-      } */
     });
     setVerduras(nuevasVerduras);
   };
