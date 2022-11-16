@@ -11,6 +11,7 @@ AJAX (Asynchronous JavaScript And XML)
  */
 
 import { mostrar } from "./Bibliotecas/manipularDOM.js";
+import { getPlanetas } from "./Bibliotecas/traerDatos.js";
 
 window.onload = () => {
   // Se recogen los elementos de la web que necesitaré en lo sucesivo.
@@ -194,5 +195,18 @@ window.onload = () => {
     })
     .catch((error) => {
       console.error(error);
+    }); */
+
+  // Trabajando con eventos.
+  /* boton.addEventListener("click", () => {
+      // Se obtiene una promesa, no los datos que contiene.
+      console.log(getPlanetas(url));
+      // Se obtiene una promesa y se consume para acceder a su contenido.
+      console.log(
+        getPlanetas(url).then((datos) => {
+          //console.log(datos);
+          mostrar(datos, contenedor);
+        })
+      );
     }); */
 }; // Fin del window.load.
