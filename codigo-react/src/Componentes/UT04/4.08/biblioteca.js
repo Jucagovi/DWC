@@ -1,13 +1,3 @@
-"use strict";
-
-const mostrar = (objeto, donde) => {
-  let cadena = "";
-  objeto.map((v, i, a) => {
-    cadena += `<p>El planeta ${v.name} tiene un periodo orbital de ${v.orbital_period} días terrestres.</p>`;
-  });
-  donde.innerHTML = cadena;
-};
-
 const generarUUID = () => {
   var d = new Date().getTime();
   var uuid = "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, (c) => {
@@ -18,4 +8,4 @@ const generarUUID = () => {
   return uuid;
 };
 
-export { mostrar, generarUUID };
+export { generarUUID };
