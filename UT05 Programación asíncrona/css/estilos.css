@@ -3,3 +3,31 @@
   margin: 5px;
   border: solid black 1px;
 }
+
+#botones {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#contenedor {
+  display: flex;
+  width: 99%;
+}
+
+#peliculas {
+  flex: 30%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.pelicula:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+#elenco {
+  flex: 70%;
+  border: 1px solid black;
+  padding: 0px 15px;
+}

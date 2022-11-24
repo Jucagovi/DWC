@@ -26,7 +26,7 @@ const obtenerDatos = (url) => {
       })
       // Si se produce un error se devuelve un mensaje.
       .catch(() => {
-        rechazar(new Error("Ha habido un error."));
+        return new Error("Ha habido un error.");
       })
   );
 };

@@ -1,21 +1,28 @@
 "use strict";
 
-const mostrar = (objeto, donde) => {
+function mostrar(cosas, donde) {
   let cadena = "";
-  objeto.map((v, i, a) => {
+  cosas.map((v, i, a) => {
     cadena += `<p>El planeta ${v.name} tiene un periodo orbital de ${v.orbital_period} días terrestres.</p>`;
   });
   donde.innerHTML = cadena;
-};
+}
 
-const generarUUID = () => {
-  var d = new Date().getTime();
-  var uuid = "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, (c) => {
-    var r = (d + Math.random() * 16) % 16 | 0;
-    d = Math.floor(d / 16);
-    return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
+function mostrarPeliculas(peliculas, donde) {
+  let cadena = "";
+  peliculas.map((v, i, a) => {
+    cadena += `<p class="pelicula" title="${v.url}"> ${v.title} </p>`;
   });
-  return uuid;
-};
+  donde.innerHTML = cadena;
+}
 
-export { mostrar, generarUUID };
+function mostrarElenco(elenco, donde) {
+  let cadena = "";
+  elenco.map((v, i, a) => {
+    //console.log(v);
+    cadena += `<p class="elenco"> ${v.value.name} tiene los ojos de color ${v.value.eye_color}.</p>`;
+  });
+  donde.innerHTML = cadena;
+}
+
+export { mostrar, mostrarPeliculas, mostrarElenco };

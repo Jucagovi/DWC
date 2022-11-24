@@ -5,12 +5,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/estilos.css"
+      media="screen"
+    />
     <title>Practicando asincronismo</title>
   </head>
   <body>
-    <input type="button" id="boton" value="Asincronismo fácil" />
-    <div id="contenedor"></div>
+    <div id="botones">
+      <input type="button" id="boton1" value="Asincronismo fácil" />
+      <input type="button" id="boton2" value="Asincronismo más fácil (await)" />
+    </div>
+    <div id="contenedor">
+      <div id="peliculas"></div>
+      <div id="elenco"></div>
+    </div>
     <!-- <script type="module" src="script.js"></script> -->
-    <script type="module" src="script_async_await.js"></script>
+    <!-- <script type="module" src="script_async_await.js"></script> -->
+    <script type="module" src="script_repaso.js"></script>
   </body>
 </html>
