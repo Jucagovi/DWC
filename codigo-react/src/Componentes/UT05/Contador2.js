@@ -8,7 +8,7 @@ function Contador2() {
    * Manejar efectos secundarios, ciclo de vida y dependecncias.
    *
    * Parámetros del useEffect.
-   *    -> fucnión a ejecutar,
+   *    -> función a ejecutar,
    *    -> array de valores.
    *
    * useEffect como ciclo de vida.
