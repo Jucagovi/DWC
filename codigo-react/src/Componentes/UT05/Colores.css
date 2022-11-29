@@ -1,0 +1,16 @@
+#colores {
+  width: 99%;
+  height: 300px;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+.grey {
+  background-color: grey;
+}
