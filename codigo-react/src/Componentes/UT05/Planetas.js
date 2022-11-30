@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { obtenerDatos } from "./Bibliotecas/getDatos.js";
+import { obtenerDatos, formatear } from "./Bibliotecas/getDatos.js";
 import "./Planetas.css";
 import Planeta from "./Planeta.js";
 import ListadoPlanetas from "./ListadoPlanetas.js";
@@ -34,7 +34,7 @@ function Planetas() {
     getPlanetas(url);
   }, []);
 
-  return (
+  /* return (
     <React.Fragment>
       <div className="App-header caja">
         <div id="listadoPLanetas">
@@ -64,7 +64,7 @@ function Planetas() {
               <p>
                 El período orbital de {planeta.name} es de{" "}
                 {planeta.rotation_period} días. Posee un clima {planeta.climate}{" "}
-                y una población de {planeta.population} habitantes
+                y una población de {formatear(planeta.population)} habitantes
               </p>
               <p>
                 Su gravedad es de {planeta.gravity} y es del tipo{" "}
@@ -77,24 +77,24 @@ function Planetas() {
         </div>
       </div>
     </React.Fragment>
-  );
+  ); */
 
-  /* return (
+return (
     <React.Fragment>
       <div className="App-header caja">
         <div id="listadoPLanetas">
-          <ListadoPlanetas datos={planetas} funcion={getDatosPlaneta} />
+          <ListadoPlanetas datos={planetas} funcion={getDatosPlaneta}/>
         </div>
         <div id="datos">
           {Object.keys(planeta).length !== 0 ? (
-            <Planeta datos={planeta} />
+            <Planeta datos={planeta}/>
           ) : (
             "No se ha seleccionado un planeta de la lista."
           )}
         </div>
       </div>
     </React.Fragment>
-  ); */
+  ); 
 }
 
 export default Planetas;
