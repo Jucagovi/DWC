@@ -34,7 +34,7 @@ function Planetas() {
     getPlanetas(url);
   }, []);
 
-  return (
+  /* return (
     <React.Fragment>
       <div className="App-header caja">
         <div id="listadoPLanetas">
@@ -77,24 +77,24 @@ function Planetas() {
         </div>
       </div>
     </React.Fragment>
-  );
+  ); */
 
-  /* return (
+return (
     <React.Fragment>
       <div className="App-header caja">
         <div id="listadoPLanetas">
-          <ListadoPlanetas />
+          <ListadoPlanetas datos={planetas} funcion={getDatosPlaneta}/>
         </div>
         <div id="datos">
           {Object.keys(planeta).length !== 0 ? (
-            <Planeta />
+            <Planeta datos={planeta}/>
           ) : (
             "No se ha seleccionado un planeta de la lista."
           )}
         </div>
       </div>
     </React.Fragment>
-  ); */
+  ); 
 }
 
 export default Planetas;
