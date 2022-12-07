@@ -9,11 +9,11 @@ function Unidad05() {
     <React.Fragment>
       {/* Control del ciclo de vida con useEffect. */}
       {/* <Contador2 /> */}
-      {/* <Colores /> */}
+      <Colores />
       {/* Dependecias en useEffect */}
       {/* <ContadorPlus /> */}
       {/* Trabajando con peticiones externas */}
-      <Planetas />
+      {/* <Planetas /> */}
     </React.Fragment>
   );
 }

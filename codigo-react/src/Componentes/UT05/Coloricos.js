@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Colores.css";
 
 function Coloricos() {
-  const colorInicial = "black";
+  const colorInicial = "blue";
   const [color, setColor] = useState(colorInicial);
 
   const cambiarColor = (evento) => {
@@ -11,18 +11,22 @@ function Coloricos() {
     } else {
       setColor("grey");
     }
+    console.log(
+      `He ejecutado el evento de window en la coordenada ${evento.clientX}.`
+    );
   };
 
   useEffect(() => {
     // Se ejecuta al crear el componente.
     // No se vuelve a ejecutar ya que el array está vacío.
-    window.addEventListener("mousemove", cambiarColor);
+    window.addEventListener("click", cambiarColor);
 
     // Este return se ejecuta al desmontar el componente.
     // Además antes de cada ejecución.
-    /*  return () => {
-      window.removeEventListener("mousemove", cambiarColor);
-    }; */
+    return () => {
+      window.removeEventListener("click", cambiarColor);
+      console.log(`He quitado el evento del window.`);
+    };
   }, []);
   return (
     <React.Fragment>
