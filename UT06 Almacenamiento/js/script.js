@@ -95,7 +95,7 @@ window.onload = () => {
    *
    * */
 
-  /* const obtenerDiscentesSnap = async () => {
+  const obtenerDiscentesSnap = async () => {
     // Se obtienen todos los documentos de la colección y se añade una función de callback.
     const discentesDocumentos = await onSnapshot(
       discentesColeccion,
@@ -106,7 +106,7 @@ window.onload = () => {
         });
       }
     );
-  }; */
+  };
 
   //obtenerDiscentes();
   //obtenerDiscentesSnap();
@@ -114,11 +114,14 @@ window.onload = () => {
   /**
    *
    *  Filtrar datos
-   *   query   ->   Filtrar los resultados de la consulta. Parámetros -> colección y sentencia where.
+   *   query   ->   Filtrar los resultados de la consulta. 
+   *                Parámetros -> colección y sentencia where.
    *   where   ->   Especifica las condiciones que los documentos deben cumplir.
    *                (<, <=, ==, >, >=, !=, array-contains, array-contains-any, in y not-in)
-   *   orderBy ->   Ordenar los documentos de una colección. Parámetros -> clave y tipo de ordenación.
-   *   limit   ->   Limita la cantidad de documentos consultados. Parámetros -> número de documentos.
+   *   orderBy ->   Ordenar los documentos de una colección. 
+   *                Parámetros -> clave y tipo de ordenación.
+   *   limit   ->   Limita la cantidad de documentos consultados. 
+   *                Parámetros -> número de documentos.
    *
    *  Limitaciones de las consultas (más relevantes).
    *    ->  soporte limitado para OR (in y array-constains-any),
@@ -166,5 +169,5 @@ window.onload = () => {
     }
   };
 
-  //filtrarDiscentes("modulos", "DWC");
+  filtrarDiscentes("modulos", "DWSs");
 }; // Fin window.load.
