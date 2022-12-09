@@ -1,0 +1,62 @@
+#datos {
+  margin: 20px;
+  padding: 10px;
+  border: 2px grey solid;
+}
+
+article {
+  margin: 20px;
+  padding: 15px;
+  border: 2px grey solid;
+}
+
+#informacion {
+  margin: 20px;
+  padding: 10px;
+}
+.fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.celda {
+  margin: 3px;
+  padding: 5px;
+}
+
+.borrar {
+  margin: 3px;
+  padding: 5px;
+}
+
+.borrar:hover {
+  cursor: pointer;
+}
+
+.fila:hover {
+  background-color: rgb(200, 211, 236);
+  cursor: pointer;
+}
+
+.bien {
+  font-weight: bold;
+  color: green;
+  background-color: rgb(193, 216, 193);
+  padding: 20px;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+  background-color: rgb(252, 168, 168);
+  padding: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+fieldset {
+  margin: 20px 0px;
+  padding: 15px;
+}
