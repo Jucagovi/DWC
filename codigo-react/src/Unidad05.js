@@ -1,4 +1,6 @@
 import React from "react";
+import Colorines from "./Componentes/UT05/5.05/Colorines.js";
+import ColorinesMal from "./Componentes/UT05/5.05/ColorinesMal.js";
 import Colores from "./Componentes/UT05/Colores.js";
 import Contador2 from "./Componentes/UT05/Contador2.js";
 import ContadorPlus from "./Componentes/UT05/ContadorPlus.js";
@@ -9,11 +11,14 @@ function Unidad05() {
     <React.Fragment>
       {/* Control del ciclo de vida con useEffect. */}
       {/* <Contador2 /> */}
-      <Colores />
+      {/* <Colores /> */}
       {/* Dependecias en useEffect */}
       {/* <ContadorPlus /> */}
       {/* Trabajando con peticiones externas */}
       {/* <Planetas /> */}
+      {/* Solución al Ejercicio 2 de la p´rctica 5.05 */}
+      {/* <Colorines /> */}
+      <ColorinesMal />
     </React.Fragment>
   );
 }
