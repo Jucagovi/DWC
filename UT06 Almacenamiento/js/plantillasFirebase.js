@@ -1,11 +1,6 @@
 "use strict";
 
-<<<<<<< HEAD
 const pintarDiscente = (documento) => {
-=======
-export const pintarDiscente = (documento) => {
-  console.log(documento.data());
->>>>>>> f4f550423590b8183e3b8ac781345b98ae38e368
   return `<div class="fila">
   <img class="borrar" src="./img/borrar.png" id="${documento.id}">
   <div class="celda">${
