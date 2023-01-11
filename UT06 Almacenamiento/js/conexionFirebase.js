@@ -1,6 +1,8 @@
 "use strict";
-// Importar las funcones necesarias desde su biblioteca.
+// Importar las funciones necesarias desde su biblioteca.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+// Importar función para crear acceso al servicio de autentificación.
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 // Configurar el objeto con los datos de acceso de Firebase.
 const firebaseConfig = {
   apiKey: "AIzaSyBxev8HfvYlLHvGDkMDK_aUGkaNEy-RAW0",
@@ -12,5 +14,7 @@ const firebaseConfig = {
 };
 // Crear el enlace a la aplicación.
 const app = initializeApp(firebaseConfig);
+// Crear el acceso al servicio de autentificación.
+const autentificacion = getAuth(app);
 // Exportar el objeto aplicación.
-export { app };
+export { app, autentificacion };
