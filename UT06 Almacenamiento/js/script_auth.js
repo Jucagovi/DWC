@@ -68,13 +68,13 @@ window.onload = () => {
   const iniciarSesion = (usuario, contra) => {
     signInWithEmailAndPassword(autentificacion, usuario, contra)
       .then((credenciales) => {
-        console.log("Sesión Iniciada");
+        /* console.log("Sesión Iniciada");
         console.log(credenciales.user);
         informe.innerHTML = `Ficha del usuario:<br>
                             Correo: ${credenciales.user.email}<br>
                             Nombre: ${credenciales.user.displayName}<br>
                             Correo verificado: ${credenciales.user.emailVerified}`;
-        obtenerDiscentesSnap();
+        obtenerDiscentesSnap(); */
       })
       .catch((error) => {
         informacion.innerHTML = `Ha habido un error: ${error.message}`;
@@ -99,8 +99,9 @@ window.onload = () => {
   const cerrarSesion = () => {
     try {
       autentificacion.signOut();
+      /*
       datos.innerHTML = "<h3>No se ha iniciado sesión</h3>";
-      informe.innerHTML = `Sesión cerrada.`;
+      informe.innerHTML = `Sesión cerrada.`; */
     } catch (error) {
       informacion.innerHTML = `Ha habido un error: ${error.message}`;
     }
@@ -118,7 +119,7 @@ window.onload = () => {
 
   // Se crea un monitor sobre la sesión del usuario y se le vincula una función.
 
-  /*  onAuthStateChanged(autentificacion, (usuario) => {
+   onAuthStateChanged(autentificacion, (usuario) => {
     if (usuario) {
       console.log(`Se ha iniciado sesión con el id: ${usuario.uid}`);
       informe.innerHTML = `Ficha del usuario:<br>
@@ -130,7 +131,7 @@ window.onload = () => {
       datos.innerHTML = "<h3>No se ha iniciado sesión</h3>";
       informe.innerHTML = `Sesión cerrada.`;
     }
-  }); */
+  });
 
   // Función que crea un monitor sobre la colección de datos Discentes.
 
@@ -147,3 +148,16 @@ window.onload = () => {
     );
   };
 }; // Fin del window.onload.
+
+
+/**
+ *  Uso de get() en reglas Firebase para acceder a datos de una colección.
+ * 
+ * match /productos/{documents=**} {
+  // Permitir eliminar salas de conversación si el usuario está autentificado y es administrador
+  allow delete: if request.auth != null && 
+  get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == "editor"
+} 
+ * 
+ *  */
+
