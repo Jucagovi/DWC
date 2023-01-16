@@ -5,6 +5,8 @@ import {
   getFirestore,
   collection,
   onSnapshot,
+  deleteDoc,
+  doc,
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 /** Importación de la biblioteca del servicio auth */
@@ -20,6 +22,12 @@ window.onload = () => {
   let informacion = document.getElementById("informacion"); // Contenedor de información.
   const db = getFirestore(app); // Enlace a la base de datos comppleta.
   const discentesColeccion = collection(db, "discentes"); // Enlace a la colección discentes.
+
+  datos.addEventListener("click", (e) => {
+    if (e.target.tagName === "IMG" && e.target.classList.contains("borrar")) {
+      borrarDiscente(e.target.id);
+    }
+  });
 
   /**
    *  ************ Autentificación de usuarios **************
@@ -146,4 +154,25 @@ window.onload = () => {
       }
     );
   };
+
+  const borrarDiscente = async (id) => {
+    const resultado = await deleteDoc(doc(discentesColeccion, id));
+    // Devuelve "undefined" siempre, luego no es posible controlar errores de este modo.
+    // console.log(resultado);
+    informacion.innerHTML = `<p class='bien'>${id} borrado con éxito.</p>`;
+    plantillas.borrar(informacion);
+  };
+
+  /**
+   * Reglas para acceder al rol del usuario logeado:
+   * rules_version = '2';
+        service cloud.firestore {
+          match /databases/{database}/documents {
+            match /discentes/{document=**} {
+              allow read: if true;
+     	        allow write: if request.auth != null && get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == "admin"
+            }
+          }
+        }
+   */
 }; // Fin del window.onload.
