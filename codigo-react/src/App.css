@@ -51,3 +51,10 @@
   background-color: rgb(197, 197, 197);
   min-width: 350px;
 }
+
+.conBorde {
+  padding: 50px;
+  margin-left: 10px;
+  border: 2px white solid;
+  min-width: 350px;
+}
