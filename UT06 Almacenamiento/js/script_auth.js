@@ -127,7 +127,7 @@ window.onload = () => {
 
   // Se crea un monitor sobre la sesión del usuario y se le vincula una función.
 
-   onAuthStateChanged(autentificacion, (usuario) => {
+  onAuthStateChanged(autentificacion, (usuario) => {
     if (usuario) {
       console.log(`Se ha iniciado sesión con el id: ${usuario.uid}`);
       informe.innerHTML = `Ficha del usuario:<br>
@@ -177,16 +177,3 @@ window.onload = () => {
         }
    */
 }; // Fin del window.onload.
-
-
-/**
- *  Uso de get() en reglas Firebase para acceder a datos de una colección.
- * 
- * match /productos/{documents=**} {
-  // Permitir eliminar salas de conversación si el usuario está autentificado y es administrador
-  allow delete: if request.auth != null && 
-  get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == "editor"
-} 
- * 
- *  */
-
