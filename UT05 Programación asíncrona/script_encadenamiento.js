@@ -23,4 +23,3 @@ new Promise((resolver, rechazar) => {
   .finally(() => {
     console.log("Proceso de encadenamiento de promesas terminado.");
   });
-//comentario feo
