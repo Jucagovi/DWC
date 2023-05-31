@@ -6,7 +6,7 @@ new Promise((resolver, rechazar) => {
   }, 1000);
 })
   .then((res_p1) => {
-    console.log(res_p1); // 1
+    console.log(res_p1);
     return res_p1 + 1;
   })
   .then((res_p2) => {
@@ -18,7 +18,7 @@ new Promise((resolver, rechazar) => {
     return res_p3 + 1;
   })
   .catch(() => {
-    rechazar("Se ha producido un error.");
+    console.log("Se ha producido un error.");
   })
   .finally(() => {
     console.log("Proceso de encadenamiento de promesas terminado.");
