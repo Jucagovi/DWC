@@ -24,7 +24,7 @@ persona3.ciudad = "Petrer";
 console.log(persona2);
 console.log(persona3); */
 
-/*****  Arrays. */
+/*****  Arrays. ********/
 
 /** Declaración.  */
 
@@ -35,10 +35,26 @@ let masCosas = [];
 
 /** Spread también funciona con arrays. */
 
+/** Copiar arrays. */
+
 /* let animales = ["perro", "gato", "feo"];
 console.log(animales);
 let copiaDeAnimales = [...animales];
 console.log(copiaDeAnimales); */
+
+/** Concatenar arrays */
+
+/* let numeros = [1, 2, 3];
+let meses = ["enero", "febrero", "marzo"];
+console.log([...numeros, ...meses]); */
+
+/** Comm parámetros en una fucnión */
+
+/* let numeros = [1, 2, 3];
+const sumaNumeros = (a, b, c) => {
+  console.log(a + b + c);
+};
+sumaNumeros(...numeros); // Muestra 6. */
 
 /** 
             ¡¡Cuidado!!
