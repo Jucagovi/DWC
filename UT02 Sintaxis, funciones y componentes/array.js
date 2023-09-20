@@ -124,6 +124,10 @@ let apellido1 = persona.apellido1;
 
 //let {nombre, apellido1} = persona;
 
+/** Es posible cambiar el nombre de los atributos */
+
+// let { nombre: nom, apellido1: cognom1 } = persona;
+
 /** Funciona con arrays aunque de forma posicional. */
 
 /* let sorpresa = ["Luke", "yo", "soy", "tu", "padre"];
