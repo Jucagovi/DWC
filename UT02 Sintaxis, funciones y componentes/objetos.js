@@ -88,3 +88,10 @@ console.log(persona2.saluda({})); // Hola colega */
 /*** Encadenamiento opcional (React)*/
 
 // console.log(persona.direccion?.calle);
+
+/*** Conversión de objetos JSON */
+
+/* let texto = JSON.stringify(persona);
+console.log(texto);
+var objeto = JSON.parse(texto);
+console.log(objeto); */
