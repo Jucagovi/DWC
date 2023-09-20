@@ -38,8 +38,8 @@ console.log(persona); */
 };
 
 console.log(persona);
-console.log(persona.getNombreCompleto); // Imprimo por consola el objeto función.
-console.log(persona.getNombreCompleto()); // Ejecuto la función e imprimo su devolución. */
+console.log(persona.getNombreCompleto); // Se imprime por consola el objeto función.
+console.log(persona.getNombreCompleto()); // Se ejecuta la función y se imprime su devolución. */
 
 /*** Constructores de objetos */
 
@@ -73,10 +73,10 @@ console.log(persona2.saluda({})); // Hola colega */
 /*** Recorrer objetos con for in */
 
 /* for (var clave in persona) {
-  // Compruebo que JSON realmente tenga esa propiedad.
-  // Accedo a su prototipo y uso uno de sus métodos.
+  // Se comprueba que el JSON realmente tenga esa propiedad.
+  // Se accede a su prototipo y se usa uno de sus métodos.
   if (persona.hasOwnProperty(clave)) {
-    // Mostrando en pantalla la clave junto a su valor y el tipo de datos.
+    // Se muestra en pantalla la clave junto a su valor y el tipo de datos.
     console.log(
       `La clave es ${clave} y el valor es ${
         persona[clave]
