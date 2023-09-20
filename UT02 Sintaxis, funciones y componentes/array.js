@@ -20,9 +20,9 @@ let persona3 = persona;
 
 persona3.ciudad = "Petrer";
 
-console.log(persona);
+/* console.log(persona);
 console.log(persona2);
-console.log(persona3);
+console.log(persona3); */
 
 /*****  Arrays. */
 
@@ -35,10 +35,10 @@ let masCosas = [];
 
 /** Spread también funciona con arrays. */
 
-let animales = ["perro", "gato", "feo"];
+/* let animales = ["perro", "gato", "feo"];
 console.log(animales);
 let copiaDeAnimales = [...animales];
-console.log(copiaDeAnimales);
+console.log(copiaDeAnimales); */
 
 /** 
             ¡¡Cuidado!!
@@ -46,7 +46,7 @@ Métodos que modifican el array original y otros no.
 Algunos devuelven un elemento u otro valor.
 Incluso los hay que no hacen nada.
 
-forEach(función) 	  → ejecuta la función para cada elemento.
+forEach(función) 	  → ejecuta la función para cada elemento (descartado → funciones puras).
 map(función) 		    → ejecuta la función para cada elemento (devuelve).
 every(función) 		  → si la función se cumple siempre.
 some(función) 		  → si la función se cumple para alguno.
@@ -64,11 +64,13 @@ const feos = ["Rodrigo", "Juan", "Artura", "Javier"];
 /*** Recorrer un objeto (no se modifica pero hay que utilizar map). */
 
 /* const feos2 = feos.map((feo) => {
-  console.log(feo);
   return feo;
 });
 
 console.log(feos2); */
+
+/*  // Versión reducida. Evitar a toda costa.
+const feos2 = feos.map((feo) => feo);  */
 
 /*** Añadir un nuevo valor al objeto (uso de spread operator). */
 
@@ -108,8 +110,8 @@ let apellido1 = persona.apellido1;
 
 /** Funciona con arrays aunque de forma posicional. */
 
-let sorpresa = ["Luke", "yo", "soy", "tu", "padre"];
+/* let sorpresa = ["Luke", "yo", "soy", "tu", "padre"];
 let [sustantivo, pronombre, verbo] = sorpresa;
 console.log(sustantivo);
 console.log(pronombre);
-console.log(verbo);
+console.log(verbo); */
