@@ -16,8 +16,8 @@ var persona = {
   aficiones: ["Videojuegos"],
 }; // Todo objeto JSON finaliza con un punto y coma ( ; ).
 
-console.log(nadie);
-console.log(persona);
+/* console.log(nadie);
+console.log(persona); */
 
 /*** Acceso a las propiedades */
 
@@ -91,7 +91,17 @@ console.log(persona2.saluda({})); // Hola colega */
 
 /*** Conversión de objetos JSON */
 
-/* let texto = JSON.stringify(persona);
+console.log(`Se muestra la clave nombre de "persona": ${persona.nombre}`);
+
+let texto = JSON.stringify(persona);
+// La variable texto no es un objeto JSON, ahora es una cadena de texto.
 console.log(texto);
+// Por lo que no es posible acceder al valor de la clave nombre.
+console.log(`Se muestra la clave nombre de "texto": ${texto.nombre}`);
+
+// Se transforma ese string (que tiene forma de JSON pero no lo es) a objeto JSON.
 var objeto = JSON.parse(texto);
-console.log(objeto); */
+// Ahora es un objeto JSON de nuevo con todas sus funcionalidades.
+console.log(objeto);
+// Por tanto es posible volver a acceder a su clave nombre (ahora sí existe).
+console.log(`Se muestra la clave nombre de "objeto": ${objeto.nombre}`);
