@@ -123,4 +123,32 @@ window.onload = () => {
     },
     false
   ); */
+
+  // **************** Flujo de eventos *********************************
+  // ¿Cómo se resuleve si se producen dos eventos al mismo tiempo?
+  /** event bubbling (burbujeo)   --> de abajo a arriba (desde el objeto que lo provocó hasta window). */
+  /** event capturing (captura)   --> de arriba a abajo (desde window hasta el objeto que lo provocó y de vuelta hacia window). */
+
+  /** Por defecto el valor del tercer parámetro es false (burbujeo). */
+
+  /*   let c = 0;
+  let j = 0;
+  // Añadir un evento a todo el documento.
+  document.addEventListener(
+    "click",
+    () => {
+      c++;
+      console.log(`Pulsado document ${c} veces`);
+    },
+    false
+  );
+  // Jugando con la propagación de eventos.
+  document.getElementById("feo").addEventListener(
+    "click",
+    () => {
+      j++;
+      console.log(`Pulsado feo ${j} veces`);
+    },
+    false
+  ); */
 }; // Fin del window.onload.
