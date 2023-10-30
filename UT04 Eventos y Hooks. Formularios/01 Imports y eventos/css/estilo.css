@@ -1,0 +1,26 @@
+#feo {
+  width: 400px;
+  height: 100px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+  font: bold;
+}
+
+/* Comentar hasta la última sesión */
+
+.contenedor {
+  width: 190px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contenedor button {
+  margin: 5px;
+}
