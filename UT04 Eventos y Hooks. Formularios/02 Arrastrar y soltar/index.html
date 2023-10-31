@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+  <title>02 Flujo y Arrastrar</title>
+</head>
+<body>
+  <div id="zona_con_arrastrar">
+    <h2>Espacio con arrastrar y soltar activado.</h2>
+    <div id="arrastrables" class="soltable">
+      <div class="arrastrable" id="1">1</div>
+      <div class="arrastrable" id="2">2</div>
+      <div class="arrastrable" id="3">3</div>
+      <div class="arrastrable" id="4">4</div>
+    </div>
+    
+    <div id="soltables">
+      <div class="soltable"></div>
+      <div class="soltable"></div>
+      <div class="soltable"></div>
+      <div class="soltable"></div>
+    </div>
+    
+    <div id="soltablesTambien">
+      <div class="feo"></div>
+      <div class="feo"></div>
+      <div class="feo"></div>
+      <div class="feo"></div>
+    </div>
+  </div>
+  <div id="zona_sin_arrastrar">
+    <h2>Espacio con arrastrar y soltar sin activar.</h2>
+    <div id="arrastrables" class="soltable">
+      <div class="arrastrable" id="1">5</div>
+      <div class="arrastrable" id="2">6</div>
+      <div class="arrastrable" id="3">7</div>
+      <div class="arrastrable" id="4">8</div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>
