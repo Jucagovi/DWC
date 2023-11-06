@@ -1,0 +1,71 @@
+#soltables,
+#soltablesTambien,
+#arrastrables {
+  display: flex;
+}
+
+#arrastrables {
+  width: 510px;
+  height: 180px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+#arrastrables div {
+  margin: 10px 17px 0 10px;
+}
+
+.arrastrable {
+  flex: 0 0 100px;
+  height: 160px;
+  text-align: center;
+  font-size: 90px;
+  background: rgb(230, 157, 109);
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.soltable,
+.feo {
+  flex: 0 0 100px;
+  height: 160px;
+  background: rgb(177, 175, 179);
+  padding: 10px;
+  margin: 10px 10px 0 0;
+}
+
+#soltables, #soltablesTambien {
+  padding: 5px;
+  margin: 5px;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+  font: bold;
+}
+
+/* Comentar hasta la última sesión */
+
+.contenedor {
+  width: 190px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contenedor button {
+  margin: 5px;
+}
+
+#zona_sin_arrastrar, #zona_con_arrastrar, #zona_delegacion{
+  width: 90%;
+  border: dotted black 2px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.cambio_borde{
+  border: solid 2px red;
+}
