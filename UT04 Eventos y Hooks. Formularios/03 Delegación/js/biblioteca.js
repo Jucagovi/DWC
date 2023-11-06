@@ -28,7 +28,6 @@ const anadirEvento = (elementos) => {
   Array.from(elementos).forEach((elemento) => {
     elemento.addEventListener("click", (evento) => {
       console.log(evento.target.tagName);
-      console.log(evento.target);
     });
   });
 };
