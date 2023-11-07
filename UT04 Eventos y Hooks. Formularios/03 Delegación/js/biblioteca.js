@@ -6,6 +6,7 @@ const anadirBoton = () => {
     "<button class='boton'>Botón nuevo</button>";
 };
 
+// Intento de solucionar el problema. Mala idea.
 const anadirBotonConId = () => {
   // Se crea el identificador.
   let identificador = crypto.randomUUID();
@@ -23,6 +24,7 @@ const anadirBotonConId = () => {
   );
 };
 
+// Mala idea. Mejor poner un sólo evento en el contenedor.
 const anadirEvento = (elementos) => {
   // Se transforma elementos en un Array (de este modo puedo usar tanto getElement como querySelector).
   Array.from(elementos).forEach((elemento) => {
