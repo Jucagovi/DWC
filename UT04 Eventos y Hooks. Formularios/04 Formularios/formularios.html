@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form
+      name="formCliente"
+      id="frmClnt"
+      action="./página_que_procesa_información.php"
+    >
+      <fieldset id="infoPersonal">
+        <legend>Acceso al formulario</legend>
+        <p>
+          <!-- **********************************************************************
+            En JSX el atributo for hay que renombrarlo a htmlFor 
+         ********************************************************************** -->
+          <label for="nommbre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="correo" id="email" placeholder="Escribe tu correo..."/>
+        </p>
+        <p>
+          <input type="button" id="aceptar" value="Aceptar" />
+        </p>
+        <p id="error"></p>
+      </fieldset>
+      <fieldset id="radioBoton">
+        <legend>Radio</legend>
+        <input type="radio" id="preguntaSI" name="pregunta" value="s&iacute;" />
+        <label for="preguntaSI">Sí</label>
+        <input type="radio" id="preguntaNO" name="pregunta" value="no" />
+        <label for="preguntaNO">No</label>
+        <input type="radio" id="preguntaNS" name="pregunta" value="ns/nc" />
+        <label for="preguntaNS">No sabe/No contesta</label>
+      </fieldset>
+      <fieldset id="cajaBoton">
+        <legend>CheckBox</legend>
+        <input type="checkbox" id="preguntaAS" name="preguntaC" value="asc" />
+        <label for="preguntaAS">Piso con ascensor</label>
+        <input type="checkbox" id="preguntaAM" name="preguntaC" value="amb" />
+        <label for="preguntaAM">Piso amueblado</label>
+        <input type="checkbox" id="preguntaTE" name="preguntaC" value="ter" />
+        <label for="preguntaTE">Piso con terraza</label>
+      </fieldset>
+      <fieldset id="cajaSelect">
+        <legend>Select</legend>
+        <select id="selectAprobar">
+          <option value="10">
+            Saco 10 en Desarrollo Web en Entorno Cliente
+          </option>
+          <option value="9">Saco 9 en Desarrollo Web en Entorno Cliente</option>
+          <option value="8">Saco 8 en Desarrollo Web en Entorno Cliente</option>
+          <option value="7">Saco 7 en Desarrollo Web en Entorno Cliente</option>
+          <option value="6">Saco 6 en Desarrollo Web en Entorno Cliente</option>
+          <option value="5">Saco 5 en Desarrollo Web en Entorno Cliente</option>
+        </select>
+      </fieldset>
+    </form>
+    <!--  **********************************************************************
+      HTML5 permite hacer validaciones de datos pero se debe utiliar el evento
+      onSubmit del formulario.
+   ********************************************************************** -->
+    <form action="/paginaDestino.php">
+      <fieldset id="cajaSelect">
+        <legend>Comprobación con HTML5</legend>
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          id="contrasenya"
+          name="contrasenya"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Debe contener al menos un número, una mayúscula y una minúscula. Además debe contener 8 o más caracteres"
+        />
+        <input type="submit" />
+      </fieldset>
+    </form>
+    <script type="module" src="./js/formularios.js"></script>
+  </body>
+</html>
